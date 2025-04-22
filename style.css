@@ -1,25 +1,43 @@
+/* Define o fundo com imagem e sobreposição escura */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: #333;
+  background: url("Post para instagram sobre faculdade a distância.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  position: relative;
 }
 
+/* Camada escura sobre a imagem */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* escurece o fundo */
+  z-index: -1;
+}
+
+/* Cabeçalho */
 header {
-  background-color: #b30000;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
+/* Menu de navegação */
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  background-color: #e60000;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 nav ul li {
@@ -27,21 +45,27 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5rem;
+  display: block;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #ffcccb;
 }
 
+/* Conteúdo principal */
 main {
   padding: 2rem;
+  text-align: center;
 }
 
+/* Rodapé fixo */
 footer {
-  background-color: #b30000;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
   padding: 1rem;
