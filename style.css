@@ -1,104 +1,51 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff9f6;
-  color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7e6;
+    color: #222;
 }
 
-/* Top Bar */
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #b30000; /* vermelho escuro */
-  padding: 10px 20px;
+header {
+    background-color: #c40000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo img {
-  height: 50px;
+header img {
+    height: 50px;
 }
 
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
-.main-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.main-nav a:hover {
-  color: #ffcc00; /* amarelo */
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-  background: url('background-image.jpg') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-  background-color: #b30000;
+.destaque {
+    background-color: #ffd700;
+    padding: 60px;
+    text-align: center;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  background-color: #ffcc00; /* amarelo */
-  color: #b30000;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.cta-button:hover {
-  background-color: #e6b800;
-}
-
-/* Highlights Section */
-.highlights {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 20px;
-  background-color: #fff;
-}
-
-.highlight {
-  max-width: 300px;
-  text-align: center;
-}
-
-.highlight h2 {
-  color: #b30000;
-  margin-bottom: 10px;
-}
-
-.highlight p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Footer */
 footer {
-  background-color: #b30000;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
