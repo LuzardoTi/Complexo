@@ -1,75 +1,104 @@
-/* Define o fundo com imagem e sobreposição escura */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url("Post para instagram sobre faculdade a distância.png") no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9f6;
+  color: #333;
 }
 
-/* Camada escura sobre a imagem */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* escurece o fundo */
-  z-index: -1;
-}
-
-/* Cabeçalho */
-header {
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Menu de navegação */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Top Bar */
+.top-bar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b30000; /* vermelho escuro */
+  padding: 10px 20px;
 }
 
-nav ul li {
-  margin: 0 15px;
+.logo img {
+  height: 50px;
 }
 
-nav ul li a {
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.main-nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5rem;
-  display: block;
-  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #ffcccb;
+.main-nav a:hover {
+  color: #ffcc00; /* amarelo */
 }
 
-/* Conteúdo principal */
-main {
-  padding: 2rem;
+/* Hero Section */
+.hero {
+  background: url('background-image.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #b30000;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ffcc00; /* amarelo */
+  color: #b30000;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+}
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.highlight {
+  max-width: 300px;
   text-align: center;
 }
 
-/* Rodapé fixo */
+.highlight h2 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.highlight p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
 footer {
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
+  background-color: #b30000;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  padding: 20px;
 }
